@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+/*
+  font-family: 'Inter', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
+  font size: 15px
+*/
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  background-color: hsl(244, 38%, 16%);
+  align-items: center;
+  padding: 7%;
+  min-width: min-content;
+}
+
+.background {
+  width: 50%;
+  background-image: url(images/image-header-desktop.jpg);
+  background-size:cover;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 700;
+  width: 100%;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  margin-bottom: 3rem;
+  line-height: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  width: 100%;
+  /* gap: 10%; */
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 20px;
+}
+
+span {
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+
+}
+
+.insigths {
+  text-transform: initial;
+  font-family: 'Inter', sans-serif;
+  color: hsl(277, 64%, 61%);
+  font-size: 32px;
+}
+
+.attribution {
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: white;
+  position: fixed;
+}
+
+@media (max-width:900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 10%;
+  }
+
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .background {
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+  p {
+    margin: 0;
+  }
+  .attribution{
+    position: relative;
+  }
+
+}
